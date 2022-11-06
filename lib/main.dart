@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:mini_project/dashboard/dashboard.dart';
 import 'package:mini_project/getting%20started/splash.dart';
 import 'signup-login/signup.dart';
 import 'signup-login/login.dart';
+import 'package:mini_project/dashboard/dashboard.dart';
 import 'getting started/introslides.dart';
-import 'dashboard/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.transparent,
       ),
-      home: splashPage(),
+      home: dashboard(),
       debugShowCheckedModeBanner: false,
     );
   }

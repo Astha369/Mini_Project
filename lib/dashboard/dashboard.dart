@@ -52,14 +52,12 @@ class _dashboardState extends State<dashboard> {
         elevation: 0,
         foregroundColor: Colors.black,
       ),
+
+
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Card(
-              child: Text(
-                "string",
-              ),
-            ),
+            // carousel(),
             SizedBox(height: 20,),
             const Align(
               alignment: Alignment.topLeft,
@@ -67,12 +65,13 @@ class _dashboardState extends State<dashboard> {
                 padding: EdgeInsets.only(left: 15.0),
                 child: Text("Mess",
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
             ),
+            SizedBox(height: 10,),
             Container(
                 decoration: BoxDecoration(
                   color: Colors.white70,
@@ -118,12 +117,192 @@ class _dashboardState extends State<dashboard> {
                   ],
                 )
             ),
+
+
+            SizedBox(height: 20,),
+            const Align(
+              alignment: Alignment.topLeft,
+              child: Padding(
+                padding: EdgeInsets.only(left: 15.0),
+                child: Text("CSIT Canteen",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 10,),
+            Container(
+                decoration: BoxDecoration(
+                  color: Colors.white70,
+                ),
+                padding: EdgeInsets.only(left: 15.0, right: 15.0),
+                width: double.infinity,
+                height: 100,
+                child: GridView.count(crossAxisCount: 1,scrollDirection: Axis.horizontal,
+                  physics: ScrollPhysics(),
+                  shrinkWrap: true,
+                  primary: true,
+                  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+                  childAspectRatio: 0.60, //1.0
+                  mainAxisSpacing: 20, //1.0
+                  // crossAxisSpacing: 4.0, //1.0
+                  children: [
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 30,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Icon(Icons.arrow_forward_rounded),
+                  ],
+                )
+            ),
+
+            SizedBox(height: 20,),
+            const Align(
+              alignment: Alignment.topLeft,
+              child: Padding(
+                padding: EdgeInsets.only(left: 15.0),
+                child: Text("Mechanical Canteen",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 10,),
+            Container(
+                decoration: BoxDecoration(
+                  color: Colors.white70,
+                ),
+                padding: EdgeInsets.only(left: 15.0, right: 15.0),
+                width: double.infinity,
+                height: 100,
+                child: GridView.count(crossAxisCount: 1,scrollDirection: Axis.horizontal,
+                  physics: ScrollPhysics(),
+                  shrinkWrap: true,
+                  primary: true,
+                  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+                  childAspectRatio: 0.60, //1.0
+                  mainAxisSpacing: 20, //1.0
+                  // crossAxisSpacing: 4.0, //1.0
+                  children: [
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 30,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Icon(Icons.arrow_forward_rounded),
+                  ],
+                )
+            ),
+
+            SizedBox(height: 20,),
+            const Align(
+              alignment: Alignment.topLeft,
+              child: Padding(
+                padding: EdgeInsets.only(left: 15.0),
+                child: Text("Hostel Canteen",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 10,),
+            Container(
+                decoration: BoxDecoration(
+                  color: Colors.white70,
+                ),
+                padding: EdgeInsets.only(left: 15.0, right: 15.0),
+                width: double.infinity,
+                height: 100,
+                child: GridView.count(crossAxisCount: 1,scrollDirection: Axis.horizontal,
+                  physics: ScrollPhysics(),
+                  shrinkWrap: true,
+                  primary: true,
+                  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+                  childAspectRatio: 0.60, //1.0
+                  mainAxisSpacing: 20, //1.0
+                  // crossAxisSpacing: 4.0, //1.0
+                  children: [
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 30,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 20,
+                      color: Colors.grey,
+                    ),
+                    Icon(Icons.arrow_forward_rounded),
+                  ],
+                )
+            ),
+
           ],
         ),
       ),
     );
   }
 }
-
-
 
